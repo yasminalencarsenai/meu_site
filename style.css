@@ -1,0 +1,126 @@
+/*Formatação da minha pagina*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 11, 11);
+    color: #f1f1f1;
+}
+
+.cabecalho{
+    background-color: #1b1c22;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f20707;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f20707;
+}
+.menu a{
+    color: #c5c5c5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.container{
+    max-width: 1200px;  /*largura maxima da tela*/
+    margin: 40px auto;  /*margem*/
+    padding: 0 20px;
+}
+
+.titulo-secao{
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.subtitulo{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.grade-filmes{ 
+    display: grid; /**ORGANIZAR TODOS OS ELEMENTOS (FILHOS) EM LINHAS E COLUNAS*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.card-filme{
+    background-color: #1b1c22;
+    border-radius: 10px; /*ARREDONDA OS 4 CANTOS*/
+    overflow: hidden; /*CORTAR E ESCONDER QUALQUER CONTEUDO QUE ULTRAPASSEM OS LIMITES*/
+    box-shadow: 0 4px 12px #f1f1f1;
+    display: flex;
+    flex-direction: column; /*muda o eixp de alinhamento, fazendo com que os elementos filho fiquem um embaixo do outro*/
+}
+
+.card-filme:hover{
+    transform: translateY(-8px); /*ELEVA O CARD PARA CIMA*/
+    box-shadow: 0 10px 20px #1b1c22;
+}
+.poster{
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /*GARANTE QUE TODAS AS IMAGENS FIQUEM COM A ALTURA PERFEITA */
+}
+.conteudo-filme{
+    padding: 20px;
+    display: flex; /*LADO A LADO*/
+    flex-direction: column;
+    flex-grow: 1;  /*ESTICA VERTICALMENTE E EMPURRA O BOTÃO PARA A BASE*/
+}
+
+.genero{
+    font-size: 12px;
+    color: #c5c5c5;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.nome-filme{
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+}
+
+.sinopse{
+    font-size: 14px;
+    color: #c5c5c5;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.sessoes{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.horario{
+    display: inline-block;
+    background-color: #f20707;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #1b1c22;
+    
+}
+.Botao-comprar{
+    display: block;
+    text-align: center;
+    background-color: #f20707;
+    color: #f1f1f1;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Botao-comprar:hover{
+    background-color: aquamarine;
+}
