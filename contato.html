@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class = "logo"> 🍿 cineSENAI📽️</div> 
+        <nav class= "menu">
+            <a href="index.html">Em cartaz</a>
+            <a href="breve.html">Em breve</a>
+            <a href="precos.html">Preços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>    
+
+        <main class="container">
+            <h1> Cadastro para dicas de filmes</h1>
+            <p>Preencha seus dados para realizar a inscrição no CineSenai</p>
+
+            <div class="area-inscricao"> 
+
+                <form action="/processar-cadastro" method="post" class="coluna-form">
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="3" maxlength="50"><br>
+
+                    <label for="senha">Senha de acesso:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8" maxlength="15"><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required><br>
+                    
+                    <label for="data_nasc">Data de nascimento:</label>
+                    <input type="date" id="data_nasc" name="data_nascimento" min="1900-01-01" max="2026-12-31" required><br>
+
+                    <label>Periodo dos filmes</label><br>
+                    <input type="radio" id="turno" name="turno" value="manha" required>
+                    <label for="turno_manha">Manhã</label><br>
+
+                    <input type="radio" id="turno_tarde" name="turno" value="Tarde">
+                    <label for="turno_tarde">Tarde</label><br>
+
+                    <input type="radio" id="turno_noite" name="turno" value="noite">
+                    <label for="turno_noite">Noite</label><br><br>
+
+                    <label>filmes de interesses</label><br>
+                    <input type="checkbox" id="acao" name="interesse" values="acao">
+                    <label for="acao">Filme de ação</label><br>
+
+                    <input type="checkbox" id="comédia" name="interesse" value="comédia">
+                    <label for="comedia">Filme de comedia</label><br>
+
+                    <input type="checkbox" id="terror" name="interesse" value="terror">
+                    <label for="terror">Filme de Terror</label><br><br>
+
+                    <label for="unidade">Selecione o Cinema</label>
+                    <select name="unidade" id="unidade" required>
+                        <option value=""disa selected>Selecione um cinema</option>
+                        <option value="sp">São Paulo - capital</option>
+                        <option value="Sebastianopolis">Sebastianópolis do Sul</option>
+                        <option value="votuporanga">Votuporanga</option>
+                        <option value="valentim">Valentim Gentil</option>
+       
+                    </select>
+                    <input type="checkbox" id="termos" name="termos" required><br>
+                    <label for="termos">Li e Aceito os termos</label><br><br>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                    <button type="reset" class="btn-limpar">Limpar Tudo</button><br>
+
+
+                 </form>
+
+                    <div class="coluna-midia">
+                     <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.710563582193!2d-49.9741406260536!3d-20.435988654261653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd5ed3407ca22d%3A0x4a5bd12c9b9d678f!2sSENAI%20-%20VOTUPORANGA!5e0!3m2!1spt-BR!2sbr!4v1787665701297!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+
+                     <iframe width="<iframe width="560" height="315" src="https://www.youtube.com/embed/Tm8AuQGi3Mw?si=YSF9UfWkglrF7sDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+
+                     </div>
+
+            </div>
+
+        </main>
+            
+
+
+</body>
+</html>
