@@ -1,4 +1,3 @@
-/*Formatação da minha pagina*/
 
 *{
     box-sizing: border-box;
@@ -34,8 +33,8 @@ body{
     transition: color 0.3s ease;
 }
 .container{
-    max-width: 1200px;  /*largura maxima da tela*/
-    margin: 40px auto;  /*margem*/
+    max-width: 1200px;  /* LARGURA MAXIMA DA TELA*/
+    margin: 40px auto;  /*MARGEM*/
     padding: 0 20px;
 }
 
@@ -49,21 +48,21 @@ body{
     color: black;
     margin-bottom: 30px;
 }
-
+/*ORGANIZAR TODOS OS ELEMENTOS (FILHOS) EM LINHAS E COLUNAS*/
 .grade-filmes{ 
-    display: grid; /**ORGANIZAR TODOS OS ELEMENTOS (FILHOS) EM LINHAS E COLUNAS*/
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
 }
+
 .card-filme{
     background-color: #1b1c22;
     border-radius: 10px; /*ARREDONDA OS 4 CANTOS*/
     overflow: hidden; /*CORTAR E ESCONDER QUALQUER CONTEUDO QUE ULTRAPASSEM OS LIMITES*/
     box-shadow: 0 4px 12px #f1f1f1;
     display: flex;
-    flex-direction: column; /*muda o eixp de alinhamento, fazendo com que os elementos filho fiquem um embaixo do outro*/
+    flex-direction: column; /*MUDA O EIXO DE ALINHAMENTO, FAZENDO COM QUE OS ELEMENTOS FILHO FIQUEM UM EMBAIXO DO OUTRO*/
 }
-
 .card-filme:hover{
     transform: translateY(-8px); /*ELEVA O CARD PARA CIMA*/
     box-shadow: 0 10px 20px #1b1c22;
@@ -191,4 +190,27 @@ body{
 }
 .btn-limpar:hover{
     background-color: #c5c5c5;
+}
+.tabela-cardapio{
+    width: 80%;
+    border-radius: 10px;
+}
+.tabela-preço{
+    width: 100%;
+    background-color: #A91101;
+    text-align: left;
+    font-size: 15px;
+}
+.tabela-preço th{
+    background-color: #1b1c22;
+    color:#f1f1f1;
+    padding: 16px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #A91101;
+}
+.tabela-preço td{
+    padding: 16px 20px;
+    border-bottom: 1px solid #A91101;
+    color: #f1f1f1;
 }
